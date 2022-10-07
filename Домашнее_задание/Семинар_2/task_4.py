@@ -1,7 +1,6 @@
 # Реализуйте алгоритм перемешивания списка, без использования встроеных методов (особенно SHUFFLE, без него) можно (нужно) использовать библиотеку Random
 
-from html.entities import name2codepoint
-from queue import Empty
+
 import random
 
 n = int(input('Сколько чисел будет в списке? : '))

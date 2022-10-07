@@ -7,10 +7,9 @@ for i in range(-n, n+1):
 print(list)
 
 path = "file_task_1.txt"
-data = open(path, 'r')
 numbers = []
-
-for i in data:
-    numbers.append(list[int(i)])
+with open(path, 'r') as data:
+    for i in data:
+        numbers.append(list[int(i)])
     
 print(numbers[0] * numbers[1])
