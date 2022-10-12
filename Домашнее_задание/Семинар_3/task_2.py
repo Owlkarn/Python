@@ -5,27 +5,47 @@
 # [2, 3, 4, 5, 6] => [12, 15, 16]
 # [2, 3, 5, 6] => [12, 15]
 
-import random
+# import random
 
-n = int(input('Сколько чисел будет в списке? : '))
-a = int(input('Начальное значение случайных чисел : '))
-b = int(input('Конечное значение случайных чисел : '))
+# n = int(input('Сколько чисел будет в списке? : '))
+# a = int(input('Начальное значение случайных чисел : '))
+# b = int(input('Конечное значение случайных чисел : '))
 
-numbers_list = []
+# numbers_list = []
 
-for i in range(n):
-    numbers_list.append(random.randint(a, b))
+# for i in range(n):
+#     numbers_list.append(random.randint(a, b))
 
-print(numbers_list)
+# print(numbers_list)
 
-if n % 2 == 0:
-    list_length = n / 2
-else:
-    list_length = int(n / 2) + 1
+# if n % 2 == 0:
+#     list_length = n / 2
+# else:
+#     list_length = int(n / 2) + 1
 
-new_list = []
+# new_list = []
 
-for i in range(list_length):
-    new_list.append(numbers_list[i] * numbers_list[-i-1])
+# for i in range(list_length):
+#     new_list.append(numbers_list[i] * numbers_list[-i-1])
 
-print(new_list)
+# print(new_list)
+
+from random import randint as rI
+
+number = int(input('Введите размер списка: '))
+
+myList = []
+
+for i in range(number):
+    myList.append(rI(-10, 10))
+
+print(myList)
+
+listLenght = len(myList)
+
+multiList = []
+for i in range(listLenght//2+1):
+    element = myList[i]*myList[listLenght-i-1]
+    multiList.append(element)
+
+print(multiList)

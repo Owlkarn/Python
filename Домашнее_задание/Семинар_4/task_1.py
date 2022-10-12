@@ -6,7 +6,8 @@
 # d от 0.1 до 0.0000000001
 
 import math
+from decimal import Decimal
 
-d = input('Введите точность: ')
+d = Decimal(input('Введите точность: '))
 
-print(round(math.pi, len(d) - 2))
+print(round(math.pi, int(math.log(d, 0.1))))
