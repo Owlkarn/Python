@@ -12,7 +12,7 @@ import random
 k = int(input('Введите натуральную степень: '))
 
 numbers = []
-pathWrite = 'Task_4_1.txt'
+pathWrite = 'Task_4.txt'
 
 with open(pathWrite, 'w', encoding='UTF-8') as data:
     data.write(f'k = {k} -> ')
@@ -70,5 +70,8 @@ for i in range(1, len(numbers)):
                     data.write(f'{numbers[i]}*X**{k - i}')    
         else:
             i +=1
+
+with open(pathWrite, 'a', encoding='UTF-8') as data:
+    data.write(' = 0')
 
 

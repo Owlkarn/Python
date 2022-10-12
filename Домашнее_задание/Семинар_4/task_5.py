@@ -82,8 +82,11 @@ equation_1 = equation_1[(del_start + 2):]
 del_start = equation_2.find('>')
 equation_2 = equation_2[(del_start + 2):]
 
-print(equation_1)
-print(equation_2)
+del_start = equation_1.find('=')
+equation_1 = equation_1[:(del_start - 2)]
+
+del_start = equation_2.find('=')
+equation_2 = equation_2[:(del_start - 2)]
 
 Separate(equation_1, multipliers_1, degrees_1)
 Separate(equation_2, multipliers_2, degrees_2)
@@ -178,3 +181,5 @@ for i in range(1, len(equation_3)):
                     data.write(f'{equation_3[i]}*X**{k - i}')    
         else:
             i +=1
+with open(pathWrite, 'a', encoding='UTF-8') as data:
+    data.write(' = 0')
