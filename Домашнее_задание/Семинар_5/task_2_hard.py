@@ -61,7 +61,7 @@ while candies > 0:
             comp_turn = False
             print(f'Я взял {comp_candies} конфет! Осталось {candies}! Твоя очередь ходить!')
             
-        elif (max_candies_in_round + 1) < candies < (max_candies_in_round * 2):
+        elif (max_candies_in_round + 1) < candies < (max_candies_in_round * 2 + 1):
             comp_candies = candies - max_candies_in_round - 1
             candies -= comp_candies
             players_turn = True
