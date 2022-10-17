@@ -21,6 +21,7 @@ first_turn_fail = False
 if coin_predict == coin:
     players_candies = int(input('Угадал! Ходи первым! Возьми от 1 до 28 конфет: '))
     players_turn = False
+    first_turn_fail = True
     candies -= players_candies
     
 else:
@@ -48,7 +49,15 @@ while candies > 0:
     
     else:
         if first_turn_fail:
-            comp_candies = max_candies_in_round - players_candies
+            comp_candies = candies % (max_candies_in_round + 1)
+            if comp_candies > candies:
+                comp_candies = candies
+                sys.exit(f'Я взял {candies} конфет! Конфет не осталось! Я выиграл!')
+            elif comp_candies == 0 or comp_candies > 28:
+                comp_candies = 1
+                first_turn_fail = True
+            else:
+                first_turn_fail = False
             candies -= comp_candies
             players_turn = True
             comp_turn = False
