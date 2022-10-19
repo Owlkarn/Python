@@ -34,10 +34,10 @@ from random import randint as rI
 
 number = int(input('Введите размер списка: '))
 
-myList = []
+myList = [rI(-10, 10) for i in range(number)]
 
-for i in range(number):
-    myList.append(rI(-10, 10))
+# for i in range(number):
+#     myList.append(rI(-10, 10))
 
 print(myList)
 
