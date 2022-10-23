@@ -8,10 +8,10 @@
 n = input('Введите последовательность цифр: ')
 
 count = 0
-solo_numbers = []
+solo_numbers = list(filter(lambda x: (n.count(x) == 1), n))
 
-for i in n:
-    if n.count(i) == 1:
-        solo_numbers.append(i)
+# for i in n:
+#     if n.count(i) == 1:
+#         solo_numbers.append(i)
     
 print(solo_numbers)

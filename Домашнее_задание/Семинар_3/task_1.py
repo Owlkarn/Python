@@ -10,10 +10,10 @@ n = int(input('Сколько чисел будет в списке? : '))
 a = int(input('Начальное значение случайных чисел : '))
 b = int(input('Конечное значение случайных чисел : '))
 
-numbers_list = []
+numbers_list = [random.randint(a, b) for i in range(n)]
 
-for i in range(n):
-    numbers_list.append(random.randint(a, b))
+# for i in range(n):
+#     numbers_list.append(random.randint(a, b))
 
 print(numbers_list)
 
