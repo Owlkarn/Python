@@ -1,6 +1,6 @@
 import tkinter as tk
 
-def InputData(string: str):
+def InputData():
     equation=input('Введите выражение: ')
     return equation
 
