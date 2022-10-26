@@ -19,10 +19,14 @@ def start():
                 contact = view.input_contact()
                 model.new_contact(contact)
             case 4:
-                contact = view.input_change()
+                contact = view.change_contact()
                 model.change_contact(*contact)
             case 5:
                 number = view.get_index_del_element()
                 model.del_element(number)
+            case 6:
+                search_element = view.get_search_element()
+                result = model.find_element(search_element)
+                view.show_find_results(result)
 
 

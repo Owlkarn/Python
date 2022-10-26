@@ -15,7 +15,6 @@ def open_file(path):
     for item in data:
         contact = item.replace('\n', '').split(';')
         phone_book.append(contact)
-    print(phone_book[0])
 
 def new_contact(contact):
     global phone_book
@@ -38,3 +37,13 @@ def save_phone_book(path):
 def del_element(number):
     global phone_book
     phone_book.pop(number)
+    
+def find_element(search_el):
+    global phone_book
+    filter_phone_book = []
+    for i in range(len(phone_book)):
+        for j in range(len(phone_book[i])):
+            if phone_book[i][j].casefold().find(search_el) != -1:
+                filter_phone_book.append(phone_book[i])
+                break
+    return filter_phone_book
