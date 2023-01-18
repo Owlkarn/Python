@@ -29,7 +29,7 @@
 #     new_list.append(numbers_list[i] * numbers_list[-i-1])
 
 # print(new_list)
-
+import math
 from random import randint as rI
 
 number = int(input('Введите размер списка: '))
@@ -43,9 +43,9 @@ print(myList)
 
 listLenght = len(myList)
 
-multiList = []
-for i in range(listLenght//2+1):
-    element = myList[i]*myList[listLenght-i-1]
-    multiList.append(element)
+multiList = [myList[i]*myList[listLenght-i-1] for i in range(math.ceil(listLenght/2))]
+# for i in range(listLenght//2+1):
+#     element = myList[i]*myList[listLenght-i-1]
+#     multiList.append(element)
 
 print(multiList)

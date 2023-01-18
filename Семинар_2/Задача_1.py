@@ -4,10 +4,10 @@
     
 #     - Для N = 5: 1, -3, 9, -27, 81
 
-NumberN = int(input('Введите число N: '))
-result = []
-for i in range(NumberN):
-    result.append((-3)**i)
+N = int(input('Введите число N: '))
+result = [(-3)**i for i in range(N)]
+# for i in range(N):
+#     result.append((-3)**i)
 print(result)
 
 

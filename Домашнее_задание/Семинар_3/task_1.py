@@ -19,8 +19,12 @@ print(numbers_list)
 
 sum_numbers = 0
 
-for i in range(1, n, 2):
-    sum_numbers += numbers_list[i]
+for num, val in enumerate(numbers_list):
+    if num%2 != 0:
+        sum_numbers += val
+
+# for i in range(1, n, 2):
+#     sum_numbers += numbers_list[i]
 
 print(sum_numbers)
 
