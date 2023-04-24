@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="511afc8e-b777-4947-9711-89b32d2e9500" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Домашнее_задание/Семинар_1/task_1_5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Домашнее_задание/Семинар_1/task_1_5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Домашнее_задание/Семинар_3/task_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Домашнее_задание/Семинар_3/task_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Домашнее_задание/Семинар_3/task_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Домашнее_задание/Семинар_3/task_2.py" afterDir="false" />
-    </list>
+    <list default="true" id="4d709c73-adaf-44c2-a4ca-ff9cbb63c73e" name="Changes" comment="Fix errors" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +22,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Fn7HiaBBAjkXHu9S7F0GGkji2j" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -192,11 +188,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Python$task_1.coverage" NAME="task_1 Coverage Results" MODIFIED="1673021764824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Домашнее_задание/Семинар_4" />
-    <SUITE FILE_PATH="coverage/Python$task_2.coverage" NAME="task_2 Coverage Results" MODIFIED="1674022254710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Домашнее_задание/Семинар_3" />
-    <SUITE FILE_PATH="coverage/Python$task_1__1_.coverage" NAME="task_1 (1) Coverage Results" MODIFIED="1674021906108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Домашнее_задание/Семинар_3" />
-    <SUITE FILE_PATH="coverage/Python$task_1_5.coverage" NAME="task_1_5 Coverage Results" MODIFIED="1674017944877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Домашнее_задание/Семинар_1" />
   </component>
 </project>
